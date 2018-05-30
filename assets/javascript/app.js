@@ -19,10 +19,32 @@
 
         var gifDiv = $("<div class='gif'>")
 
-        
-
     })
-
+    
     }
 
+// adding gif into array
+
+    function renderButtons() {
+
+        for (var i=0; i < gif.length; i++) {
+
+            var add = $("<button>");
+
+            a.addClass("gif-btn");
+
+            a.attr("data-name", movies[i]);
+        }
+    }
+
+    $("#add-gif").on("click", function(event) {
+
+        event.preventDefault();
+
+        var gif = $("#gif-input").val().trim();
+
+        gif.push(gif);
+
+        renderButtons();
+    });
 
