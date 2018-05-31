@@ -13,3 +13,8 @@ h1 {
     padding: 60px;
     border-bottom: solid;
 }
+
+#add-gif {
+    border-radius: 12px;
+    color: #3700B3;
+}

@@ -1,7 +1,7 @@
 // empty array to hold gif
     var gif = [];
 
-// gif function
+// get the gif data
 
     function displaygif() {
 
@@ -17,10 +17,12 @@
 
 // div that holds the gif
         var gifDiv = $("<div class='gif-container'>")
+
+// the submit button will add the gif into array "gif"
+
+
     })
     }
-
-// adding gif into array
 
     function renderButtons() {
 
