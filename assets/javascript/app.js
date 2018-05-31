@@ -16,11 +16,8 @@
     }).then(function(response){
 
 // div that holds the gif
-
-        var gifDiv = $("<div class='gif'>")
-
+        var gifDiv = $("<div class='gif-container'>")
     })
-    
     }
 
 // adding gif into array
@@ -30,9 +27,7 @@
         for (var i=0; i < gif.length; i++) {
 
             var add = $("<button>");
-
             a.addClass("gif-btn");
-
             a.attr("data-name", movies[i]);
         }
     }
@@ -40,11 +35,15 @@
     $("#add-gif").on("click", function(event) {
 
         event.preventDefault();
-
         var gif = $("#gif-input").val().trim();
-
         gif.push(gif);
 
         renderButtons();
     });
+
+    $(document).on("click",);
+
+    renderButtons();
+
+// as the gif is added, the button also shows up on page
 

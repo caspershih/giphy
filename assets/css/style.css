@@ -10,4 +10,6 @@ h1 {
 .container {
     text-align: center;
     margin: 30px;
+    padding: 60px;
+    border-bottom: solid;
 }
